@@ -1,5 +1,10 @@
 
 import { Greet } from './components/welcome'
+import { Contact } from './components/contact'
+import { Container } from 'react-bootstrap'
+import Col from 'react-bootstrap/esm/Col'
+import Row from 'react-bootstrap/esm/Row'
+import { Theme } from './components/theme'
 
 function Nav(){
   
@@ -26,13 +31,27 @@ function WhoAmI(){
 
 
 function App() {
+  let html: any = document.querySelector("html")
+  html.setAttribute("data-bs-theme", "dark")
+  
+
 
   return (
-  <>
-    <Nav />
-
-    <Greet name="Shawn" age={18} />
-  </>
+    <Container>
+      <Row className="text-center m-3">
+        <Col>
+          <Contact />
+        </Col>
+        <Col>
+        <Theme bg={html}/>
+        </Col>
+      </Row>
+      <br />
+      <br />
+      <Row className='text-center'>
+        <Col><h1>Shawn Michael Sudaria</h1></Col>
+      </Row>
+    </Container>
   )
 }
 
