@@ -10,8 +10,6 @@ type themeProps = {
 
 
 const Themeicon = (theme: any) => {
-    
-  
     if (theme.theme == "dark"){
         return(<Sun />)
     }

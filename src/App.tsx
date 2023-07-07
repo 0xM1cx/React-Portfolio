@@ -1,4 +1,3 @@
-import { Greet } from './components/welcome'
 import { Contact } from './components/contact'
 import { Container } from 'react-bootstrap'
 import Col from 'react-bootstrap/esm/Col'
@@ -16,25 +15,11 @@ function Nav(){
   )
 }
 
-function Projects(){
-
-}
-
-function Blog(){
-
-}
-
-function WhoAmI(){
-
-}
-
 
 function App() {
   let html: any = document.querySelector("html")
   html.setAttribute("data-bs-theme", "dark")
   
-
-
   return (
     <Container>
       <Row className="text-center m-3">
