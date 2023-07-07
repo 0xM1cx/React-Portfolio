@@ -1,8 +1,9 @@
 import { Contact } from './components/contact'
 import { Container } from 'react-bootstrap'
-import Col from 'react-bootstrap/esm/Col'
-import Row from 'react-bootstrap/esm/Row'
+import { Col } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import { Theme } from './components/theme'
+import { Image } from 'react-bootstrap'
 
 function Nav(){
   
@@ -20,6 +21,8 @@ function App() {
   let html: any = document.querySelector("html")
   html.setAttribute("data-bs-theme", "dark")
   
+  const imageSize = {height: "auto", width: "10"}
+
   return (
     <Container>
       <Row className="text-center m-3">
@@ -33,8 +36,15 @@ function App() {
       <br />
       <br />
       <Row className='text-center'>
+        <Col>
+          <Image src='/src/assets/profile.jpg' width={260} roundedCircle />
+        </Col>
+      </Row>
+      
+      <Row className='text-center mt-4'>
         <Col><h1>Shawn Michael Sudaria</h1></Col>
       </Row>
+      
     </Container>
   )
 }
