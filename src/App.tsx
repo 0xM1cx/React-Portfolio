@@ -1,4 +1,3 @@
-
 import { Greet } from './components/welcome'
 import { Contact } from './components/contact'
 import { Container } from 'react-bootstrap'
