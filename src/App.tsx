@@ -20,8 +20,9 @@ function Nav(){
 function App() {
   let html: any = document.querySelector("html")
   html.setAttribute("data-bs-theme", "dark")
-  
-  const imageSize = {height: "auto", width: "10"}
+
+  let body: any = document.querySelector("body")
+  body.setAttribute("class", "text-light")
 
   return (
     <Container>
@@ -30,21 +31,30 @@ function App() {
           <Contact />
         </Col>
         <Col>
-        <Theme bg={html}/>
+        <Theme bg={html} bd={body}/>
         </Col>
       </Row>
       <br />
       <br />
       <Row className='text-center'>
         <Col>
-          <Image src='/src/assets/profile.jpg' width={260} roundedCircle />
+          <Image src='/src/assets/profile.jpg' width={260} roundedCircle className='shadow-lg border border-4 border-light' />
         </Col>
       </Row>
       
       <Row className='text-center mt-4'>
         <Col><h1>Shawn Michael Sudaria</h1></Col>
       </Row>
-      
+
+      <Row className='text-center mt-3' >
+        <Col><h4>IT Student | Game Programmer | IT Security Noob</h4></Col>
+      </Row>
+
+      <Row className='text-center justify-content-center'>
+        <Col>
+          <hr className='text-info border-2' />
+        </Col>
+      </Row>
     </Container>
   )
 }

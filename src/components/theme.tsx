@@ -5,6 +5,7 @@ import { SunFill } from "react-bootstrap-icons"
 
 type themeProps = {
     bg: any
+    bd: any
 }
 
 
@@ -24,10 +25,12 @@ export const Theme = (props: themeProps) => {
     const [theme, setTheme] = useState("dark")
     const Change = () => {
         if (theme == "dark"){
+            props.bd.setAttribute("class", "text-info")
             setTheme("light");
            
         }else{
             setTheme("dark");
+            props.bd.setAttribute("class", "text-light")
         }
     }   
 
