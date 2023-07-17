@@ -48,14 +48,18 @@ function App() {
 
   
       <Row className='text-center mt-3' >
-        <Col><h4>IT Student | Game Programmer | IT Security Noob</h4></Col>
+        <Col>
+          <h4>IT Student | Game Programmer | IT Security Noob</h4>
+          <hr className='border-info text-info border-3 ml-3 mr-3 px-2'/>
+        </Col>
       </Row>
 
-      <Row className='ml-4'> {/* This is the horizontal blue line */}
+      {/* This is the horizontal blue line */}
+      {/* <Row className='ml-4'> 
         <Col>
           <hr className=' text-info border-2 w-50'/>
         </Col>
-      </Row>
+      </Row> */}
 
       {/* <Row className='text-center justify-content-center'>
       </Row> */}
