@@ -46,16 +46,18 @@ function App() {
         <Col><h1>Shawn Michael Sudaria</h1></Col>
       </Row>
 
-      <Row className='text-center mt-3' >
-        <Col><h4>IT Student | Game Programmer | IT Security Noob</h4></Col>
-        <br />
+      <Container>
+        <Row className='text-center mt-3' >
+          <Col><h4>IT Student | Game Programmer | IT Security Noob</h4></Col>
+          <br />
+
+        </Row>
         <Row>
-          <Col text-center>
+          <Col>
             <hr className='text-info border-2' width={500}/>
           </Col>
         </Row>
-
-      </Row>
+      </Container>
 
       {/* <Row className='text-center justify-content-center'>
       </Row> */}
