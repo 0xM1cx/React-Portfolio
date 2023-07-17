@@ -20,6 +20,7 @@ const Themeicon = (theme: any) => {
 
 }
 
+
 export const Theme = (props: themeProps) => {
     const [theme, setTheme] = useState("dark")
     const Change = () => {
