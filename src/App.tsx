@@ -25,7 +25,7 @@ function App() {
   body.setAttribute("class", "text-light")
 
   return (
-    <Container>
+    <Container className='text-center'>
       <Row className="text-center m-3">
         <Col>
           <Contact />
@@ -46,18 +46,16 @@ function App() {
         <Col><h1>Shawn Michael Sudaria</h1></Col>
       </Row>
 
-      <Container>
-        <Row className='text-center mt-3' >
-          <Col><h4>IT Student | Game Programmer | IT Security Noob</h4></Col>
-          <br />
+  
+      <Row className='text-center mt-3' >
+        <Col><h4>IT Student | Game Programmer | IT Security Noob</h4></Col>
+      </Row>
 
-        </Row>
-        <Row>
-          <Col>
-            <hr className='text-info border-2' width={500}/>
-          </Col>
-        </Row>
-      </Container>
+      <Row className='ml-4'> {/* This is the horizontal blue line */}
+        <Col>
+          <hr className=' text-info border-2 w-50'/>
+        </Col>
+      </Row>
 
       {/* <Row className='text-center justify-content-center'>
       </Row> */}
