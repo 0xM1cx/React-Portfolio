@@ -48,13 +48,17 @@ function App() {
 
       <Row className='text-center mt-3' >
         <Col><h4>IT Student | Game Programmer | IT Security Noob</h4></Col>
+        <br />
+        <Row>
+          <Col text-center>
+            <hr className='text-info border-2' width={500}/>
+          </Col>
+        </Row>
+
       </Row>
 
-      <Row className='text-center justify-content-center'>
-        <Col>
-          <hr className='text-info border-2' />
-        </Col>
-      </Row>
+      {/* <Row className='text-center justify-content-center'>
+      </Row> */}
     </Container>
   )
 }
