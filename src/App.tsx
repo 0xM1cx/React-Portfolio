@@ -4,17 +4,10 @@ import { Col } from 'react-bootstrap'
 import { Row } from 'react-bootstrap'
 import { Theme } from './components/theme'
 import { Image } from 'react-bootstrap'
+import { Blog } from './sections/blog'
+import { WhoAmI } from './sections/whoami'
+import { Projects } from './sections/projects'
 
-function Nav(){
-  
-  return(
-    <>
-      <h1>Who Am I</h1>
-      <h1>Blog</h1>
-      <h1>Projects</h1>
-    </>
-  )
-}
 
 
 function App() {
@@ -54,15 +47,17 @@ function App() {
         </Col>
       </Row>
 
-      {/* This is the horizontal blue line */}
-      {/* <Row className='ml-4'> 
-        <Col>
-          <hr className=' text-info border-2 w-50'/>
+      <Row>
+        <Col className='p-0 m-0 col-4'>
+          <WhoAmI />
         </Col>
-      </Row> */}
-
-      {/* <Row className='text-center justify-content-center'>
-      </Row> */}
+        <Col className='p-0 m-0 col-4'>
+          <Blog />
+        </Col>
+        <Col className='p-0 m-0 col-4'>
+          <Projects />
+        </Col>
+      </Row>
     </Container>
   )
 }
